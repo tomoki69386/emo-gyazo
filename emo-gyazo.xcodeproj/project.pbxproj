@@ -12,6 +12,14 @@
 		B76595CE22381674006407EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B76595CC22381674006407EC /* Main.storyboard */; };
 		B76595D022381676006407EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B76595CF22381676006407EC /* Assets.xcassets */; };
 		B76595D322381676006407EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B76595D122381676006407EC /* LaunchScreen.storyboard */; };
+		B76595E422381975006407EC /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76595DC22381975006407EC /* FontAwesome.framework */; };
+		B76595E522381975006407EC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76595DD22381975006407EC /* RxCocoa.framework */; };
+		B76595E622381975006407EC /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76595DE22381975006407EC /* Nuke.framework */; };
+		B76595E722381975006407EC /* Device.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76595DF22381975006407EC /* Device.framework */; };
+		B76595E822381975006407EC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76595E022381975006407EC /* RxSwift.framework */; };
+		B76595E922381975006407EC /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76595E122381975006407EC /* SnapKit.framework */; };
+		B76595EA22381975006407EC /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76595E222381975006407EC /* SwiftyUserDefaults.framework */; };
+		B76595EB22381975006407EC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76595E322381975006407EC /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		B76595CF22381676006407EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B76595D222381676006407EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B76595D422381676006407EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B76595DC22381975006407EC /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/iOS/FontAwesome.framework; sourceTree = "<group>"; };
+		B76595DD22381975006407EC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		B76595DE22381975006407EC /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
+		B76595DF22381975006407EC /* Device.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Device.framework; path = Carthage/Build/iOS/Device.framework; sourceTree = "<group>"; };
+		B76595E022381975006407EC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		B76595E122381975006407EC /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		B76595E222381975006407EC /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
+		B76595E322381975006407EC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B76595E422381975006407EC /* FontAwesome.framework in Frameworks */,
+				B76595E522381975006407EC /* RxCocoa.framework in Frameworks */,
+				B76595E622381975006407EC /* Nuke.framework in Frameworks */,
+				B76595E722381975006407EC /* Device.framework in Frameworks */,
+				B76595E822381975006407EC /* RxSwift.framework in Frameworks */,
+				B76595E922381975006407EC /* SnapKit.framework in Frameworks */,
+				B76595EA22381975006407EC /* SwiftyUserDefaults.framework in Frameworks */,
+				B76595EB22381975006407EC /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +64,7 @@
 			children = (
 				B76595C722381674006407EC /* emo-gyazo */,
 				B76595C622381674006407EC /* Products */,
+				B76595DB22381974006407EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +89,21 @@
 			path = "emo-gyazo";
 			sourceTree = "<group>";
 		};
+		B76595DB22381974006407EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B76595E322381975006407EC /* Alamofire.framework */,
+				B76595DF22381975006407EC /* Device.framework */,
+				B76595DC22381975006407EC /* FontAwesome.framework */,
+				B76595DE22381975006407EC /* Nuke.framework */,
+				B76595DD22381975006407EC /* RxCocoa.framework */,
+				B76595E022381975006407EC /* RxSwift.framework */,
+				B76595E122381975006407EC /* SnapKit.framework */,
+				B76595E222381975006407EC /* SwiftyUserDefaults.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +114,7 @@
 				B76595C122381674006407EC /* Sources */,
 				B76595C222381674006407EC /* Frameworks */,
 				B76595C322381674006407EC /* Resources */,
+				B76595DA223818EE006407EC /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -129,6 +170,35 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B76595DA223818EE006407EC /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Device.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FontAwesome.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B76595C122381674006407EC /* Sources */ = {
@@ -283,6 +353,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "emo-gyazo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +374,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "emo-gyazo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

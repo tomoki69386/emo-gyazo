@@ -1,0 +1,7 @@
+github "Alamofire/Alamofire" "4.8.1"
+github "Ekhoo/Device" "3.1.2"
+github "ReactiveX/RxSwift" "4.4.2"
+github "SnapKit/SnapKit" "4.2.0"
+github "kean/Nuke" "7.5.2"
+github "radex/SwiftyUserDefaults" "3.0.1"
+github "thii/FontAwesome.swift" "1.5.1"
