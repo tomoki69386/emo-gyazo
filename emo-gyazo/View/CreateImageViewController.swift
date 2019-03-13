@@ -31,6 +31,10 @@ class CreateImageViewController: UIViewController {
         }).disposed(by: disposeBag)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     private func emojiToImage(text: String, size: CGFloat = 500) -> UIImage {
         let outputImageSize = CGSize.init(width: size, height: size)
         let baseSize = text.boundingRect(with: CGSize(width: 2048, height: 2048),
