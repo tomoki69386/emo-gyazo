@@ -46,7 +46,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="VXC-Sr-Ihp"/>
                                                 </constraints>
-                                                <state key="normal" title="保存"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                <state key="normal" title="保存">
+                                                    <color key="titleColor" name="main"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -89,6 +92,9 @@
     <resources>
         <namedColor name="bg">
             <color red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="main">
+            <color red="0.95294117647058818" green="0.54117647058823526" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
