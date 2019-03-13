@@ -60,7 +60,7 @@
             </objects>
             <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
         </scene>
-        <!--Create Image View Controller-->
+        <!--作る-->
         <scene sceneID="c8A-5z-O1C">
             <objects>
                 <viewController id="rYl-Ih-LUr" customClass="CreateImageViewController" customModule="emo_gyazo" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,12 +103,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="o0V-mK-9mg"/>
                     </view>
-                    <navigationItem key="navigationItem" id="s1l-ag-Fk7">
+                    <navigationItem key="navigationItem" title="作る" id="s1l-ag-Fk7">
                         <barButtonItem key="leftBarButtonItem" title="戻る" id="XQ7-DA-EcX"/>
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="67H-d8-Sjk"/>
                     </navigationItem>
                     <connections>
                         <outlet property="cancelBarButton" destination="XQ7-DA-EcX" id="L6T-iH-lDl"/>
                         <outlet property="imageView" destination="d0H-a9-52s" id="xd2-Cx-W31"/>
+                        <outlet property="saveBarButton" destination="67H-d8-Sjk" id="57U-4R-Wc9"/>
                         <outlet property="textField" destination="2a1-Fw-njK" id="bPV-EX-de0"/>
                     </connections>
                 </viewController>

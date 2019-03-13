@@ -15,6 +15,7 @@ class CreateImageViewController: UIViewController {
     private let disposeBag = DisposeBag()
     
     @IBOutlet private weak var cancelBarButton: UIBarButtonItem!
+    @IBOutlet private weak var saveBarButton: UIBarButtonItem!
     @IBOutlet private weak var textField: UITextField!
     @IBOutlet private weak var imageView: UIImageView!
 
@@ -23,6 +24,11 @@ class CreateImageViewController: UIViewController {
         
         cancelBarButton.rx.tap.subscribe(onNext: { [weak self] _ in
             self?.dismiss(animated: true)
+        }).disposed(by: disposeBag)
+        
+        saveBarButton.rx.tap.subscribe(onNext: { [weak self] _ in
+            guard let image = self?.imageView.image else { return }
+            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
         }).disposed(by: disposeBag)
         
         textField.rx.text.subscribe(onNext: { [weak self] text in
