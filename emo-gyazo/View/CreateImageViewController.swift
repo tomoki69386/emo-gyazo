@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 import RxSwift
 import RxCocoa
 
@@ -29,6 +30,9 @@ class CreateImageViewController: UIViewController {
         saveBarButton.rx.tap.subscribe(onNext: { [weak self] _ in
             guard let image = self?.imageView.image else { return }
             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            HUD.flash(.success, onView: nil, delay: 1.0, completion: { _ in
+                self?.dismiss(animated: true)
+            })
         }).disposed(by: disposeBag)
         
         textField.rx.text.subscribe(onNext: { [weak self] text in
