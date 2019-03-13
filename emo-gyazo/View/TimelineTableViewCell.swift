@@ -21,6 +21,7 @@ class TimelineTableViewCell: UITableViewCell {
     @IBOutlet private weak var saveButton: UIButton!
     
     func update() {
-        
+        bodyImageView.setImage(with: "https://pbs.twimg.com/media/D1db59zU4AAnXTH.jpg")
+        titleLabel.text = "😇"
     }
 }
