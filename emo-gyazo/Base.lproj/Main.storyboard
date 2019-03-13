@@ -67,14 +67,49 @@
                     <view key="view" contentMode="scaleToFill" id="tUT-zx-bVP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lXb-FJ-X4Q">
+                                <rect key="frame" x="16" y="80" width="343" height="402"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.87" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画像にしたい文字を入れよう！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cow-zD-pDe">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="13"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2a1-Fw-njK">
+                                        <rect key="frame" x="0.0" y="21" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="rYl-Ih-LUr" id="sBR-h4-wE0"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d0H-a9-52s">
+                                        <rect key="frame" x="0.0" y="59" width="343" height="343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="d0H-a9-52s" secondAttribute="height" multiplier="1:1" id="3kY-OU-gRc"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="o0V-mK-9mg" firstAttribute="trailing" secondItem="lXb-FJ-X4Q" secondAttribute="trailing" constant="16" id="joo-6b-QTi"/>
+                            <constraint firstItem="lXb-FJ-X4Q" firstAttribute="top" secondItem="o0V-mK-9mg" secondAttribute="top" constant="16" id="oyw-fV-deT"/>
+                            <constraint firstItem="lXb-FJ-X4Q" firstAttribute="leading" secondItem="o0V-mK-9mg" secondAttribute="leading" constant="16" id="p9w-tA-9xg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="o0V-mK-9mg"/>
                     </view>
                     <navigationItem key="navigationItem" id="s1l-ag-Fk7">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="XQ7-DA-EcX"/>
+                        <barButtonItem key="leftBarButtonItem" title="戻る" id="XQ7-DA-EcX"/>
                     </navigationItem>
                     <connections>
                         <outlet property="cancelBarButton" destination="XQ7-DA-EcX" id="L6T-iH-lDl"/>
+                        <outlet property="imageView" destination="d0H-a9-52s" id="xd2-Cx-W31"/>
+                        <outlet property="textField" destination="2a1-Fw-njK" id="bPV-EX-de0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="che-cn-S2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
