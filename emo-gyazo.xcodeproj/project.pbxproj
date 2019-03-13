@@ -12,6 +12,8 @@
 		B731F020223948F400A25BDE /* PKHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B731F01F223948F400A25BDE /* PKHUD.framework */; };
 		B731F02222394A9F00A25BDE /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B731F02122394A9F00A25BDE /* Reusable.swift */; };
 		B731F02422394ABA00A25BDE /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B731F02322394ABA00A25BDE /* UITableView+Extension.swift */; };
+		B731F02722394B9400A25BDE /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B731F02522394B9400A25BDE /* TimelineTableViewCell.swift */; };
+		B731F02822394B9400A25BDE /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B731F02622394B9400A25BDE /* TimelineTableViewCell.xib */; };
 		B76595C922381674006407EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76595C822381674006407EC /* AppDelegate.swift */; };
 		B76595CB22381674006407EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76595CA22381674006407EC /* ViewController.swift */; };
 		B76595CE22381674006407EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B76595CC22381674006407EC /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 		B731F01F223948F400A25BDE /* PKHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PKHUD.framework; path = Carthage/Build/iOS/PKHUD.framework; sourceTree = "<group>"; };
 		B731F02122394A9F00A25BDE /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		B731F02322394ABA00A25BDE /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		B731F02522394B9400A25BDE /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		B731F02622394B9400A25BDE /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
 		B76595C522381674006407EC /* emo-gyazo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "emo-gyazo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76595C822381674006407EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B76595CA22381674006407EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 			children = (
 				B76595CA22381674006407EC /* ViewController.swift */,
 				B731F01D223942BB00A25BDE /* CreateImageViewController.swift */,
+				B731F02522394B9400A25BDE /* TimelineTableViewCell.swift */,
+				B731F02622394B9400A25BDE /* TimelineTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B731F02822394B9400A25BDE /* TimelineTableViewCell.xib in Resources */,
 				B76595D322381676006407EC /* LaunchScreen.storyboard in Resources */,
 				B76595D022381676006407EC /* Assets.xcassets in Resources */,
 				B76595CE22381674006407EC /* Main.storyboard in Resources */,
@@ -246,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B731F02722394B9400A25BDE /* TimelineTableViewCell.swift in Sources */,
 				B731F01E223942BB00A25BDE /* CreateImageViewController.swift in Sources */,
 				B76595CB22381674006407EC /* ViewController.swift in Sources */,
 				B76595C922381674006407EC /* AppDelegate.swift in Sources */,

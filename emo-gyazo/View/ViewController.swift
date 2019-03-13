@@ -9,12 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet private weak var tableView: UITableView! {
+        didSet {
+            tableView.tableFooterView = UIView()
+            tableView.register(TimelineTableViewCell.nib, forCellReuseIdentifier: "TimelineTableViewCell")
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
 
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TimelineTableViewCell") as? TimelineTableViewCell else {
+            fatalError("Invalid cell")
+        }
+        cell.update()
+        return cell
+    }
+}
