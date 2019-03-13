@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B731F01C223941F900A25BDE /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B731F01B223941F900A25BDE /* UIVIew+Extension.swift */; };
+		B731F01E223942BB00A25BDE /* CreateImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B731F01D223942BB00A25BDE /* CreateImageViewController.swift */; };
 		B76595C922381674006407EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76595C822381674006407EC /* AppDelegate.swift */; };
 		B76595CB22381674006407EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76595CA22381674006407EC /* ViewController.swift */; };
 		B76595CE22381674006407EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B76595CC22381674006407EC /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B731F01B223941F900A25BDE /* UIVIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
+		B731F01D223942BB00A25BDE /* CreateImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImageViewController.swift; sourceTree = "<group>"; };
 		B76595C522381674006407EC /* emo-gyazo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "emo-gyazo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76595C822381674006407EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B76595CA22381674006407EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B731F018223941E000A25BDE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B76595CC22381674006407EC /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		B731F019223941E900A25BDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B76595CA22381674006407EC /* ViewController.swift */,
+				B731F01D223942BB00A25BDE /* CreateImageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B731F01A223941ED00A25BDE /* Exntesion */ = {
+			isa = PBXGroup;
+			children = (
+				B731F01B223941F900A25BDE /* UIVIew+Extension.swift */,
+			);
+			name = Exntesion;
+			sourceTree = "<group>";
+		};
 		B76595BC22381674006407EC = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +108,10 @@
 		B76595C722381674006407EC /* emo-gyazo */ = {
 			isa = PBXGroup;
 			children = (
+				B731F01A223941ED00A25BDE /* Exntesion */,
+				B731F019223941E900A25BDE /* View */,
+				B731F018223941E000A25BDE /* Storyboard */,
 				B76595C822381674006407EC /* AppDelegate.swift */,
-				B76595CA22381674006407EC /* ViewController.swift */,
-				B76595CC22381674006407EC /* Main.storyboard */,
 				B76595CF22381676006407EC /* Assets.xcassets */,
 				B76595D122381676006407EC /* LaunchScreen.storyboard */,
 				B76595D422381676006407EC /* Info.plist */,
@@ -205,8 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B731F01E223942BB00A25BDE /* CreateImageViewController.swift in Sources */,
 				B76595CB22381674006407EC /* ViewController.swift in Sources */,
 				B76595C922381674006407EC /* AppDelegate.swift in Sources */,
+				B731F01C223941F900A25BDE /* UIVIew+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
