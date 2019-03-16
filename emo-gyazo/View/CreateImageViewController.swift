@@ -10,6 +10,7 @@ import UIKit
 import PKHUD
 import RxSwift
 import RxCocoa
+import Alamofire
 
 class CreateImageViewController: UIViewController {
     
@@ -30,6 +31,7 @@ class CreateImageViewController: UIViewController {
         saveBarButton.rx.tap.subscribe(onNext: { [weak self] _ in
             guard let image = self?.imageView.image else { return }
             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            self?.postImage()
             HUD.flash(.success, onView: nil, delay: 1.0, completion: { _ in
                 self?.dismiss(animated: true)
             })
@@ -74,5 +76,26 @@ class CreateImageViewController: UIViewController {
         UIGraphicsEndImageContext()
         return image
     }
-
+    
+    private func postImage() {
+        let url = "http://localhost:3000/api/v1/posts/new"
+        guard let imageData = imageView.image?.jpegData(compressionQuality: 0.5) else { return }
+        Alamofire.upload(
+            multipartFormData: { multipartFormData in
+                multipartFormData.append(imageData, withName: "image", fileName: "image.jpeg", mimeType: "image/jpeg")
+        }, to: url, encodingCompletion: { encodingResult in
+            switch encodingResult {
+            case .success(let upload, _, _):
+                print(encodingResult)
+                upload.responseJSON { response in
+                    print(response)
+                }
+                upload.uploadProgress { progress in
+                    print(progress.fractionCompleted)
+                }
+            case .failure(let error):
+                print(error)
+            }
+        })
+    }
 }

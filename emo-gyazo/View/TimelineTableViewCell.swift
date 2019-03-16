@@ -20,6 +20,8 @@ class TimelineTableViewCell: UITableViewCell {
             baseView.layer.shadowOffset = CGSize(width: 0, height: 5)
             baseView.layer.shadowRadius = 8
             baseView.layer.shadowColor = UIColor.black.cgColor
+            baseView.layer.shadowOpacity = 0.1
+            baseView.layer.cornerRadius = 16
         }
     }
     @IBOutlet private weak var titleLabel: UILabel!
