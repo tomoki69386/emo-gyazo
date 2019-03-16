@@ -16,6 +16,8 @@
 		B731F02822394B9400A25BDE /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B731F02622394B9400A25BDE /* TimelineTableViewCell.xib */; };
 		B731F02A22394FA400A25BDE /* UIImageVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B731F02922394FA400A25BDE /* UIImageVIew+Extension.swift */; };
 		B731F0A7223D60B600A25BDE /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B731F0A6223D60B600A25BDE /* PostModel.swift */; };
+		B731F0AD223D70B100A25BDE /* .env in Resources */ = {isa = PBXBuildFile; fileRef = B731F0AC223D70B100A25BDE /* .env */; };
+		B731F0AF223D70B900A25BDE /* .env.sample in Resources */ = {isa = PBXBuildFile; fileRef = B731F0AE223D70B900A25BDE /* .env.sample */; };
 		B76595C922381674006407EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76595C822381674006407EC /* AppDelegate.swift */; };
 		B76595CB22381674006407EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76595CA22381674006407EC /* ViewController.swift */; };
 		B76595CE22381674006407EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B76595CC22381674006407EC /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 		B731F02622394B9400A25BDE /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
 		B731F02922394FA400A25BDE /* UIImageVIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageVIew+Extension.swift"; sourceTree = "<group>"; };
 		B731F0A6223D60B600A25BDE /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		B731F0AC223D70B100A25BDE /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
+		B731F0AE223D70B900A25BDE /* .env.sample */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env.sample; sourceTree = "<group>"; };
 		B76595C522381674006407EC /* emo-gyazo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "emo-gyazo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76595C822381674006407EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B76595CA22381674006407EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				B76595CF22381676006407EC /* Assets.xcassets */,
 				B76595D122381676006407EC /* LaunchScreen.storyboard */,
 				B76595D422381676006407EC /* Info.plist */,
+				B731F0AC223D70B100A25BDE /* .env */,
+				B731F0AE223D70B900A25BDE /* .env.sample */,
 			);
 			path = "emo-gyazo";
 			sourceTree = "<group>";
@@ -223,9 +229,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B731F0AD223D70B100A25BDE /* .env in Resources */,
 				B731F02822394B9400A25BDE /* TimelineTableViewCell.xib in Resources */,
 				B76595D322381676006407EC /* LaunchScreen.storyboard in Resources */,
 				B76595D022381676006407EC /* Assets.xcassets in Resources */,
+				B731F0AF223D70B900A25BDE /* .env.sample in Resources */,
 				B76595CE22381674006407EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
