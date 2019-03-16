@@ -16,7 +16,7 @@ class ViewController: UIViewController {
             post = Array(post.reversed())
         }
     }
-    let url = "http://localhost:3000/api/v1/posts"
+    let url = "\(AppUser.apiHost)/api/v1/posts"
 
     @IBOutlet private weak var tableView: UITableView! {
         didSet {

@@ -78,7 +78,7 @@ class CreateImageViewController: UIViewController {
     }
     
     private func postImage() {
-        let url = "http://localhost:3000/api/v1/posts/new"
+        let url = "\(AppUser.apiHost)/api/v1/posts"
         guard let imageData = imageView.image?.jpegData(compressionQuality: 0.5) else { return }
         Alamofire.upload(
             multipartFormData: { multipartFormData in
