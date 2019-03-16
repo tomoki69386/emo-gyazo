@@ -18,6 +18,7 @@
 		B731F0A7223D60B600A25BDE /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B731F0A6223D60B600A25BDE /* PostModel.swift */; };
 		B731F0AD223D70B100A25BDE /* .env in Resources */ = {isa = PBXBuildFile; fileRef = B731F0AC223D70B100A25BDE /* .env */; };
 		B731F0AF223D70B900A25BDE /* .env.sample in Resources */ = {isa = PBXBuildFile; fileRef = B731F0AE223D70B900A25BDE /* .env.sample */; };
+		B731F0B2223D714F00A25BDE /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B731F0B1223D714F00A25BDE /* AppUser.swift */; };
 		B76595C922381674006407EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76595C822381674006407EC /* AppDelegate.swift */; };
 		B76595CB22381674006407EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76595CA22381674006407EC /* ViewController.swift */; };
 		B76595CE22381674006407EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B76595CC22381674006407EC /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		B731F0A6223D60B600A25BDE /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		B731F0AC223D70B100A25BDE /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
 		B731F0AE223D70B900A25BDE /* .env.sample */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env.sample; sourceTree = "<group>"; };
+		B731F0B1223D714F00A25BDE /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		B76595C522381674006407EC /* emo-gyazo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "emo-gyazo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76595C822381674006407EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B76595CA22381674006407EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		B731F0B0223D714800A25BDE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B731F0B1223D714F00A25BDE /* AppUser.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
 		B76595BC22381674006407EC = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 		B76595C722381674006407EC /* emo-gyazo */ = {
 			isa = PBXGroup;
 			children = (
+				B731F0B0223D714800A25BDE /* App */,
 				B731F0A5223D60AD00A25BDE /* Model */,
 				B731F01A223941ED00A25BDE /* Exntesion */,
 				B731F019223941E900A25BDE /* View */,
@@ -281,6 +292,7 @@
 				B731F02A22394FA400A25BDE /* UIImageVIew+Extension.swift in Sources */,
 				B76595CB22381674006407EC /* ViewController.swift in Sources */,
 				B76595C922381674006407EC /* AppDelegate.swift in Sources */,
+				B731F0B2223D714F00A25BDE /* AppUser.swift in Sources */,
 				B731F01C223941F900A25BDE /* UIVIew+Extension.swift in Sources */,
 				B731F02222394A9F00A25BDE /* Reusable.swift in Sources */,
 				B731F02422394ABA00A25BDE /* UITableView+Extension.swift in Sources */,

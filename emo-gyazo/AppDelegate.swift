@@ -39,6 +39,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             fatalError(error.localizedDescription)
         }
         
+        guard let apiHost = ProcessInfo.processInfo.environment["api_host"] else {
+            fatalError("api_hostが.envファイルに記載されていません。")
+        }
+        AppUser.apiHost = apiHost
+        
         return true
     }
 
