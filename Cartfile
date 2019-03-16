@@ -7,3 +7,4 @@ github "Ekhoo/Device"
 # UI
 github "kean/Nuke"
 github "thii/FontAwesome.swift"
+github "pkluz/PKHUD"
