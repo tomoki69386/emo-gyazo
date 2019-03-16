@@ -36,8 +36,8 @@ class TimelineTableViewCell: UITableViewCell {
         }
     }
     
-    func update() {
-        bodyImageView.setImage(with: "https://pbs.twimg.com/media/D1db59zU4AAnXTH.jpg")
-        titleLabel.text = "😇"
+    func update(with post: PostModel) {
+        bodyImageView.setImage(with: post.image)
+        titleLabel.text = ""
     }
 }
